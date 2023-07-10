@@ -69,6 +69,8 @@ pub struct FunctionAbiEntry {
     pub name: String,
     pub inputs: Vec<TypedParameter>,
     pub outputs: Vec<TypedParameter>,
+    #[serde(rename = "stateMutability")]
+    pub state_mutability: Option<String>,
 }
 
 /// A struct abi entry.
